@@ -12,4 +12,13 @@ public abstract class Vehicle {
     public Vehicle(String name) {
         this.name = name;
     }
+    public double calculateFuelConsumption(){
+        return getDistance()*getFuelNeeds();
+    }
+    public void go(){
+        System.out.println("vehicle running");
+    }
+    public void stop(){
+        System.out.println("vegicle stoped");
+    }
 }
